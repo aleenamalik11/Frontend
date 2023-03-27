@@ -1,0 +1,131 @@
+ #title {
+    text-decoration: initial;
+    color: darkblue;
+}
+.bodySection{
+  background-color: lightgrey !important;
+}
+
+.nav-item{
+    color: darkblue;
+    font-style: normal;
+    font-weight:bolder;    
+}
+
+.dropdown-menu {
+    background-color: white !important;
+    border-color: white !important;
+
+    border-radius: initial;
+  }
+
+
+  @media (max-width: 991.98px) {
+    .navbar-toggler:not(.collapsed) {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+  }
+  .bg-light-warning{
+    background-color: palegoldenrod;
+  }
+  
+  .text-dark-warning{
+    color:darkorange;
+    opacity: 1;
+  }
+
+  /* .rounded-circle{
+    border-radius: 50% !important;
+    width: 50px;
+  } */
+
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    outline: black;
+  }
+  
+  .carousel-control-next-icon:after
+  {
+    content: '>';
+    font-size: 55px;
+    color: black;
+    width:20px;
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+    width:20px;
+  }
+  
+
+.carousel-control-prev {
+    margin-left: -100px;
+    color:black !important;
+    bottom: 0;
+  }
+  
+  .carousel-control-next {
+    margin-right: -100px;
+    color:black !important;
+    bottom: 0;
+ 
+  }
+  @media only screen and (max-width: 767px) {
+    .carousel {
+      position: relative;
+    }
+}
+.accordion-item:hover{
+  color:inherit;
+}
+.carousel-control-next-icon {
+  background-image:none !important;
+}
+.carousel-control-prev-icon {
+  background-image:none !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+  list-style: none !important;
+  border-color: white !important;
+}
+.progress-bar  {
+  background-color: orange !important;
+}
+@media (min-width: 991.98px) {
+  .mt-lg-n22{
+    margin-top: -150px!important;
+  }
+}
+
+.mt-n50 {
+    margin-top: -50px!important;
+}
+
+.card{
+  border-color: white !important;
+}
+
+@media (max-width: 991.98px) {
+  .carousel-control-next{
+    margin-right: 0 !important;
+    color:black !important;
+    top: 380px !important;
+    bottom: auto;
+    left: 100px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .carousel-control-prev{
+    margin-left: 0 !important;
+    color:black !important;
+    top: 380px !important;
+    right: 300px !important;
+    bottom: auto;
+  }
+}
