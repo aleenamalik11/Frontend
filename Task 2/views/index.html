@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="https://unpkg.com/libphonenumber-js@1.9.6/bundle/libphonenumber-max.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/wizard.js" type="text/JavaScript"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="toast align-items-center position-fixed top-0" role="alert" aria-live="assertive" aria-atomic="true"
+        id="errorAlert">
+        <div class="d-flex">
+            <div class="toast-body" id="error">
+                Hi
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <section class="wrapper">
+        <div class="container">
+            <form action="" id="wizard" role="application" class="wizard clearfix">
+                <div class="row steps">
+                    <div class="col">
+                        <p><img id="img-step-1" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1-active.png" alt="">
+                            <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt=""
+                                class="step-arrow">
+                        </p>
+                        <p>Step 01</p>
+                    </div>
+                    <div class="col">
+                        <p><img id="img-step-2" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2.png">
+                            <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt=""
+                                class="step-arrow">
+                        </p>
+                        <p class="step-order">Step 02</p>
+
+                    </div>
+                    <div class="col">
+                        <p><img  id="img-step-3" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3.png" alt="">
+                            <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt=""
+                                class="step-arrow">
+                        </p>
+                        <p class="step-order">Step 03</p>
+
+                    </div>
+                    <div class="col">
+                        <img id="img-step-4" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4.png" alt="">
+                        <p class="step-order align-self-center">Step 04</p>
+                    </div>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <div class="row mt-4">
+            <div class="form-basic-details">
+                <h3 class="text-center">Basic Details</h3>
+                <div class="form-row">
+                    <i class="required-icon fa fa-asterisk"></i>
+                    <div class="form-holder input-icon">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" class="form-control" placeholder="First Name" />
+                    </div>
+                    <div class="form-holder input-icon">
+                        <i class="fa fa-user icon"></i>
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <i class="required-icon fa fa-asterisk"></i>
+                    <div class="form-holder input-icon ">
+                        <i class="fa fa-envelope icon"></i>
+                        <input type="email" class="form-control" id="email" placeholder="Email ID" />
+                    </div>
+                    <i class="required-icon fa fa-asterisk"></i>
+
+                    <div class="form-holder input-icon">
+                        <i class="fa fa-square-user icon"></i>
+                        <input type="text" class="form-control" placeholder="Your User ID" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-holder input-icon">
+                        <i class="fa fa-map icon"></i>
+                        <input type="text" class="form-control" placeholder="Country">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-holder input-icon">
+                            <i class="fa fa-pin icon"></i>
+                            <input type="text" class="form-control" placeholder="State">
+                        </div>
+                        <div class="form-holder input-icon">
+                            <i class="fa fa-pin-drop icon"></i>
+                            <input type="text" class="form-control" placeholder="City">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-holder input-icon">
+                        <i class="fa fa-phone icon"></i>
+                        <input type="number" class="form-control" placeholder="Phone Number" id="phoneNum">
+                    </div>
+                    <i class="required-icon fa fa-asterisk"></i>
+
+                    <div class="form-holder password input-icon">
+                        <i class="fa fa-eye icon" id="eye"></i>
+                        <input type="password" class="form-control" id="password" placeholder="Reference Coder" />
+                    </div>
+                </div>
+
+                <div>
+                    <div role="menu" class="nav-btns">
+                        <div class="disabled" aria-disabled="true">
+                            <button href="#previous" role="menuitem" class="nav-btn">Back</button>
+                        </div>
+                        <div aria-hidden="false" aria-disabled="false" id="nav-btn-li">
+                            <button id="next-step-2" role="menuitem" class="nav-btn">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-pass-change" style="display: none;">
+                <h3>Password change</h3>
+                <div class="form-row">
+                  <div class="form-holder input-icon w-100">
+                    <i class="fa fa-lock-open icon-pass"></i>
+                    <input type="password" id="curr-pass" class="form-control" placeholder="Current Password">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder input-icon w-100">
+                    <i class="fa fa-lock-open icon-pass"></i>
+                    <input type="password" id="curr-pass-confirm" class="form-control" placeholder="Enter the Current Password">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder input-icon w-100">
+                    <i class="fa fa-lock-open icon-pass"></i>
+                    <input type="password" id="new-pass" class="form-control" placeholder="New Password">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder input-icon w-100">
+                    <i class="fa fa-lock-open icon-pass"></i>
+                    <input type="password"  id="new-pass-confirm"  class="form-control" placeholder="Confirm New Password">
+                  </div>
+                </div>
+
+                <div>
+                    <div role="menu" class="nav-btns">
+                        <div class="disabled" aria-disabled="true">
+                            <button id="previous-step-3" role="menuitem" class="nav-btn">Back</button>
+                        </div>
+                        <div aria-hidden="false" aria-disabled="false" id="nav-btn-li">
+                            <button id="next-step-3" role="menuitem" class="nav-btn">Continue</button>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </section>
+</body>
+
+</html>

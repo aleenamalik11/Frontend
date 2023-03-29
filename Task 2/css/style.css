@@ -1,0 +1,132 @@
+body{
+    background-image: url(https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/form-wizard-bg.jpg);
+    font-family: lato-regular;
+    font-size: 14px;
+    margin: 0;
+    color: #999;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.wrapper{
+    width: 800px;
+    background: #fff;
+    padding: 50px;
+}
+h3{
+    font-family: lato-black;
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 29px;
+    font-weight: 900;
+}
+.form-row{
+    display: flex;
+}
+.form-row .form-group {
+    width: 50%;
+    display: flex;
+}
+.form-row .form-holder {
+    width: 50%;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.input-icon i {
+    position: absolute;
+}
+.input-icon {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.icon {
+    padding-left: 130px;
+    padding-top: 10px;
+    color: green;
+    min-width: 50px;
+    text-align: center;
+}
+.icon-pass {
+    padding-left: 290px;
+    padding-top: 10px;
+    color: green;
+    min-width: 50px;
+    text-align: center;
+}
+.nav-btn{
+    width: 100px;
+    height: 50px;
+    color:white;
+    background-color: #8eb852;
+    border-color: #8eb852;
+}
+.nav-btns{
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-btn-li{
+
+    margin-left: 470px;
+}
+
+.required-icon {
+    
+    display: flex;
+    color: red;
+    font-size: 10px;
+    align-items: left;
+    justify-content: left;
+  }
+  @media(max-width: 767px) {
+    body {
+        background:0 0;
+        height: auto;
+        display: block
+    }
+
+    .wrapper {
+        width: auto;
+        padding: 0;
+        height: auto
+    }
+
+    .form-row {
+        display: block
+    }
+
+    .form-row .form-holder {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        display: block
+    }
+
+    .steps ul li .step-arrow {
+        top: 15%
+    }
+    .nav-btns{
+        flex-direction: column;
+    }
+
+    .nav-btn{
+        margin-left: auto;
+
+    }
+    #nav-btn-li{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+}

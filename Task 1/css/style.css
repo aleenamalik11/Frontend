@@ -1,21 +1,69 @@
+ 
  #title {
     text-decoration: initial;
-    color: darkblue;
+    color: #754ffe!important;
 }
 .bodySection{
   background-color: lightgrey !important;
 }
 
+.dropdown-toggle {
+  white-space: nowrap !important;
+}
+
+.icon-shape {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.icon-xl {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  width: 3.5rem;
+}
+
+.text-decoration-none {
+  text-decoration: none!important;
+}
+
+.rounded-3 {
+  border-radius: .5rem!important;
+}
+
+.rounded {
+  border-radius: .375rem!important;
+}
+.py-10 {
+  padding-bottom: 4.5rem!important;
+  padding-top: 4.5rem!important;
+}
+
+.border-white {
+  border-color: #fff!important;
+}
+
+
+.btn-play {
+  background-color: #fff;
+  color: #754ffe;
+  transition: .2s ease;
+}
+.btn-play:hover {
+  background-color: #754ffe;
+  color: #fff;
+  transition: .2s ease;
+}
 .nav-item{
-    color: darkblue;
+    color: #754ffe!important;
     font-style: normal;
-    font-weight:bolder;    
 }
 
 .dropdown-menu {
     background-color: white !important;
     border-color: white !important;
-
     border-radius: initial;
   }
 
@@ -32,7 +80,8 @@
   }
   
   .text-dark-warning{
-    color:darkorange;
+    background-color:#ffeeda!important;
+    color: orange !important;
     opacity: 1;
   }
 
