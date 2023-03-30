@@ -41,7 +41,8 @@
             <form action="" id="wizard" role="application" class="wizard clearfix">
                 <div class="row steps">
                     <div class="col">
-                        <p><img id="img-step-1" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1-active.png" alt="">
+                        <p><img id="img-step-1"
+                                src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1-active.png" alt="">
                             <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt=""
                                 class="step-arrow">
                         </p>
@@ -56,7 +57,8 @@
 
                     </div>
                     <div class="col">
-                        <p><img  id="img-step-3" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3.png" alt="">
+                        <p><img id="img-step-3" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3.png"
+                                alt="">
                             <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-arrow.png" alt=""
                                 class="step-arrow">
                         </p>
@@ -64,7 +66,8 @@
 
                     </div>
                     <div class="col">
-                        <img id="img-step-4" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4.png" alt="">
+                        <img id="img-step-4" src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4.png"
+                            alt="">
                         <p class="step-order align-self-center">Step 04</p>
                     </div>
                     </ul>
@@ -76,27 +79,33 @@
             <div class="form-basic-details">
                 <h3 class="text-center">Basic Details</h3>
                 <div class="form-row">
-                    <i class="required-icon fa fa-asterisk"></i>
+
                     <div class="form-holder input-icon">
                         <i class="fa fa-user icon"></i>
-                        <input type="text" class="form-control" placeholder="First Name" />
+                        <input type="text" class="form-control validate" placeholder="First Name" />
+
+
                     </div>
                     <div class="form-holder input-icon">
                         <i class="fa fa-user icon"></i>
                         <input type="text" class="form-control" placeholder="Last Name">
                     </div>
+
                 </div>
                 <div class="form-row">
-                    <i class="required-icon fa fa-asterisk"></i>
+
                     <div class="form-holder input-icon ">
                         <i class="fa fa-envelope icon"></i>
-                        <input type="email" class="form-control" id="email" placeholder="Email ID" />
+                        <input type="email" class="form-control validate" id="email" placeholder="Email ID" />
+
+
                     </div>
-                    <i class="required-icon fa fa-asterisk"></i>
 
                     <div class="form-holder input-icon">
                         <i class="fa fa-square-user icon"></i>
-                        <input type="text" class="form-control" placeholder="Your User ID" />
+                        <input type="text" class="form-control validate" placeholder="Your User ID" />
+
+
                     </div>
                 </div>
 
@@ -122,12 +131,15 @@
                         <i class="fa fa-phone icon"></i>
                         <input type="number" class="form-control" placeholder="Phone Number" id="phoneNum">
                     </div>
-                    <i class="required-icon fa fa-asterisk"></i>
+
 
                     <div class="form-holder password input-icon">
                         <i class="fa fa-eye icon" id="eye"></i>
-                        <input type="password" class="form-control" id="password" placeholder="Reference Coder" />
+                        <input type="password" class="form-control validate" id="password"
+                            placeholder="Reference Coder" />
+
                     </div>
+
                 </div>
 
                 <div>
@@ -145,29 +157,132 @@
             <div class="form-pass-change" style="display: none;">
                 <h3>Password change</h3>
                 <div class="form-row">
-                  <div class="form-holder input-icon w-100">
-                    <i class="fa fa-lock-open icon-pass"></i>
-                    <input type="password" id="curr-pass" class="form-control" placeholder="Current Password">
-                  </div>
+                    <div class="form-holder input-icon w-100">
+                        <i class="fa fa-lock-open icon-pass"></i>
+                        <input type="password" id="curr-pass" class="form-control" placeholder="Current Password">
+                    </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-holder input-icon w-100">
-                    <i class="fa fa-lock-open icon-pass"></i>
-                    <input type="password" id="curr-pass-confirm" class="form-control" placeholder="Enter the Current Password">
-                  </div>
+                    <div class="form-holder input-icon w-100">
+                        <i class="fa fa-lock-open icon-pass"></i>
+                        <input type="password" id="curr-pass-confirm" class="form-control"
+                            placeholder="Enter the Current Password">
+                    </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-holder input-icon w-100">
-                    <i class="fa fa-lock-open icon-pass"></i>
-                    <input type="password" id="new-pass" class="form-control" placeholder="New Password">
-                  </div>
+                    <div class="form-holder input-icon w-100">
+                        <i class="fa fa-lock-open icon-pass"></i>
+                        <input type="password" id="new-pass" class="form-control" placeholder="New Password">
+                    </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-holder input-icon w-100">
-                    <i class="fa fa-lock-open icon-pass"></i>
-                    <input type="password"  id="new-pass-confirm"  class="form-control" placeholder="Confirm New Password">
-                  </div>
+                    <div class="form-holder input-icon w-100">
+                        <i class="fa fa-lock-open icon-pass"></i>
+                        <input type="password" id="new-pass-confirm" class="form-control"
+                            placeholder="Confirm New Password">
+                    </div>
                 </div>
+
+                <div>
+                    <div role="menu" class="nav-btns">
+                        <div class="disabled" aria-disabled="true">
+                            <button id="previous-step-2" role="menuitem" class="nav-btn">Back</button>
+                        </div>
+                        <div aria-hidden="false" aria-disabled="false" id="nav-btn-li">
+                            <button id="next-step-3" role="menuitem" class="nav-btn">Continue</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="cart-details" role="tabpanel" aria-labelledby="wizard-h-2" class="body current" aria-hidden="false"
+                style="display: none;">
+                <h3 style="margin-bottom: 16px;">My Cart</h3>
+                <table cellspacing="0"
+                    class="table-cart shop_table shop_table_responsive cart woocommerce-cart-form__contents table"
+                    id="shop_table">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th style="text-align: left;">Product Detail</th>
+                            <th>Quantity</th>
+                            <th>Total Price</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-thumb">
+                                <a href="#" class="item-thumb">
+                                    <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/item-1.jpg"
+                                        alt="" />
+                                </a>
+                            </td>
+                            <td class="product-detail" data-title="Product Detail">
+                                <div>
+                                    <p><b>Cherry</b></p>
+                                    <span>$</span>
+                                    <span class="unit-price">35</span>
+                                </div>
+                            </td>
+                            <td class="product-quantity" data-title="Quantity">
+                                <div class="quantity">
+                                    <span class="plus">+</span>
+                                    <input class="text-center quantity-input" type="text" name="quantity" value="1"
+                                        maxlength="2" max="10" size="1" id="number" />
+                                    <span class="minus">-</span>
+                                </div>
+                            </td>
+                            <td class="total-price" data-title="Total Price">
+                                <span class="woocommerce-Price-amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>
+                                    <span class="amount">35</span>
+                                </span>
+                            </td>
+                            <td class="product-remove">
+                                <a href="#">
+                                    <i class="fa fa-close-circle-o"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-thumb">
+                                <a href="#" class="item-thumb">
+                                    <img src="https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/item-2.jpg"
+                                        alt="" />
+                                </a>
+                            </td>
+                            <td class="product-detail" data-title="Product Detail">
+                                <div>
+                                    <p><b>Mango</b></p>
+                                    <span>$</span>
+                                    <span class="unit-price">2035</span>
+                                </div>
+                            </td>
+                            <td class="product-quantity" data-title="Quantity">
+                                <div class="quantity">
+                                    <span class="plus">+</span>
+                                    <input class="text-center quantity-input" type="text" name="quantity" value="1"
+                                        maxlength="2" max="10" size="1" id="number" />
+                                    <span class="minus">-</span>
+                                </div>
+                            </td>
+                            <td class="total-price" data-title="Total Price">
+                                <span class="woocommerce-Price-amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>
+                                    <span class="amount">2035</span>
+                                </span>
+                            </td>
+                            <td class="product-remove">
+                                <a href="#">
+                                    <i class="fa fa-close-circle-o"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <div>
                     <div role="menu" class="nav-btns">
@@ -175,18 +290,77 @@
                             <button id="previous-step-3" role="menuitem" class="nav-btn">Back</button>
                         </div>
                         <div aria-hidden="false" aria-disabled="false" id="nav-btn-li">
-                            <button id="next-step-3" role="menuitem" class="nav-btn">Continue</button>
+                            <button id="next-step-4" role="menuitem" class="nav-btn">Continue</button>
                         </div>
-                    
+
                     </div>
                 </div>
+
             </div>
 
+            <section id="cart-totals" role="tabpanel" aria-labelledby="wizard-h-3" class="body current"
+                aria-hidden="false" style="display: none;">
+                <h3>Cart Totals</h3>
+                <div class="cart_totals text-center">
+                    <table cellspacing="0" class="shop_table shop_table_responsive">
+                        <tbody>
+                            <tr class="cart-subtotal">
+                                <th>Subtotal</th>
+                                <td data-title="Subtotal">
+                                    <span class="woocommerce-Price-amount"> <span
+                                            class="woocommerce-Price-currencySymbol">$</span>
+                                            <span class="sub-total-amount">110.00 </span>
+                                        </span>
+                                </td>
+                            </tr>
+                            <tr class="cart-subtotal shipping">
+                                <th>Shipping:</th>
+                                <td data-title="Subtotal">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="radio" name="shipping" checked="" /> Free Shipping
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="shipping" /> Local pickup:
+                                            <span>$</span><span>0.00</span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <span>Calculate shipping</span>
+                                </td>
+                            </tr>
+                            <tr class="cart-subtotal">
+                                <th>Service <span>(estimated for Vietnam)</span></th>
+                                <td data-title="Subtotal">
+                                    <span class="woocommerce-Price-amount"> <span
+                                            class="woocommerce-Price-currencySymbol">$</span>
+                                            <span class="service-amount">5.60</span> 
+                                        </span>
+                                </td>
+                            </tr>
+                            <tr class="order-total border-0">
+                                <th>Total</th>
+                                <td data-title="Total">
+                                    <span class="woocommerce-Price-amount"> <span
+                                            class="woocommerce-Price-currencySymbol">$</span>
+                                            <span class="total-amount">64.69</span> 
+                                        </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="fin-btn" role="menuitem">Proceed to checkout</button>
+                </div>
+            </section>
 
-            
+
         </div>
 
-    </section>
+
+        </div>
 </body>
 
 </html>

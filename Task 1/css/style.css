@@ -1,3 +1,17 @@
+
+
+@font-face {
+    font-family: Feather;
+    font-style: normal;
+    font-weight: 400;
+   src: url('fonts/feather.ttf') format('truetype');
+
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 8px 8px;
+  transform: translate3d(0px, -1px, 0px);
+}
  
  #title {
     text-decoration: initial;
@@ -5,6 +19,12 @@
 }
 .bodySection{
   background-color: lightgrey !important;
+}
+
+.nav-link{
+  font-family: 'Feather' !important;
+  font-weight: 600 !important;
+  color: rgb(30, 41, 59) !important;
 }
 
 .dropdown-toggle {
@@ -98,14 +118,13 @@
   
   .carousel-control-next-icon:after
   {
-    content: '>';
     font-size: 55px;
     color: black;
     width:20px;
   }
   
   .carousel-control-prev-icon:after {
-    content: '<';
+    background-image: url('images/prev-arrow.PNG');
     font-size: 55px;
     color: black;
     width:20px;
@@ -113,7 +132,7 @@
   
 
 .carousel-control-prev {
-    margin-left: -100px;
+    margin-left: -100px !important;
     color:black !important;
     bottom: 0;
   }
@@ -127,16 +146,18 @@
   @media only screen and (max-width: 767px) {
     .carousel {
       position: relative;
+      align-items: center;
     }
 }
 .accordion-item:hover{
   color:inherit;
 }
 .carousel-control-next-icon {
-  background-image:none !important;
+  background-image: url('images/next-arrow.PNG') !important;
 }
 .carousel-control-prev-icon {
-  background-image:none !important;
+  background-image: url('images/prev-arrow.PNG') !important;
+  margin-left: 20px !important;
 }
 .accordion-button:not(.collapsed) {
   background-color: white !important;
@@ -162,19 +183,21 @@
 
 @media (max-width: 991.98px) {
   .carousel-control-next{
+    margin-top: 60px;
     margin-right: 0 !important;
     color:black !important;
     top: 380px !important;
     bottom: auto;
-    left: 100px !important;
+    left: 200px !important;
   }
 }
 @media (max-width: 991.98px) {
   .carousel-control-prev{
-    margin-left: 0 !important;
+    margin-top: 60px;
+    margin-left: 100px !important;
     color:black !important;
     top: 380px !important;
-    right: 300px !important;
+    right: 1000px !important;
     bottom: auto;
   }
 }
@@ -184,9 +207,13 @@
     margin-left: 0;
   }
 }
-@media (min-width: 991.98px) {
-  .icon{
-    margin-left: 420px; 
-    margin-right: 0px;
-    }
+
+@media (max-width: 991.98px) {
+  .card{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }
+
+
