@@ -99,24 +99,13 @@
             <input class="form-control" type="search" placeholder="Search" style="margin-left: 20px;"
               aria-label="Search">
           </li>
-
         </ul>
 
-      </div>
-
-
-      <div class="d-inline-flex">
-        <div class="row row-push">
-          <div class="col-md-1 col-2 icon">
-            <a type="checkbox" id="sun-icon"
-              class="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle me-3" href="#">
+        <span class="navbar-text">
+          <a class="btn btn-light btn-icon rounded-circle" href="#"  style="margin-top:-10px">
               <img src="https://geeks-react.netlify.app/static/media/sun.b75d9ae1f8dafcf0365aa12aeb1e0362.svg" class="">
             </a>
-          </div>
-          <div class="col-md-1 col-1">
-            <div class="dropdown" id="bell-icon">
-              <a type="checkbox" data-bs-toggle="dropdown"
-                class="form-check form-switch theme-switch btn btn-light btn-icon rounded-circle me-3" href="#">
+            <a data-bs-toggle="dropdown" class="btn btn-light btn-icon rounded-circle me-3" href="#" style="margin-top:-10px">
                 <i class="fas fa-bell"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end" style="max-height: 100px; overflow-y: auto;">
@@ -127,21 +116,15 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </div>
-          </div>
-          <div class="col-md-1 col-1 col-pull-1">
-            <div class="dropdown">
-              <a type="checkbox" data-bs-toggle="dropdown" href="#">
+
                 <img class="rounded-circle"
-                  src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
-                  style="width:40px;height:40px" />
-              </a>
+                  src="C:\Users\Pc\Documents\Frontend\Task 1\css\images\profile-avatar.jpg" style="margin-top:-10px; margin-left: -10px;"/>
               <ul class="dropdown-menu dropdown-menu-end" style="max-height: 100px; overflow-y: auto;">
                 <a class="mt-3 dropdown-item" role="button" tabindex="0" href="#">
                   <div class="d-flex">
                     <div class="avatar avatar-md avatar-indicators avatar-online">
                       <img alt="avatar"
-                        src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
+                        src="css/images/profile-avatar.jpg"
                         class="rounded-circle" style="width:40px;height:40px">
                     </div>
                     <div class="ms-3 lh-1">
@@ -159,9 +142,7 @@
                 <a class="mb-3 dropdown-item" role="button" tabindex="0" href="#"><i class="fa fa-power-off me-2"></i>
                   Sign Out</a>
               </ul>
-            </div>
-          </div>
-        </div>
+        </span>
 
       </div>
     </div>
@@ -231,10 +212,9 @@
     </div>
   </section>
 
-  <section class="bodySection">
 
 
-  <section class="pt-lg-12 pt-8 pt pb-lg-3 pb-6">
+  <section class="pt-lg-12 pt-8 pt pb-lg-3 pb-6 bodySection">
     <div class="container">
       <div class="row mt-4">
         <div class="col">
@@ -246,8 +226,8 @@
           <div class="carousel-inner">
             <div class="carousel-item active mb-md-3">
               <div class="row">
-                <div class="col  m-md-3 m-sm-3">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                <div class="col">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -296,8 +276,8 @@
                   </div>
                 </div>
 
-                <div class="col  m-md-3 d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -345,8 +325,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col  m-md-3 m-sm-3 d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -394,111 +374,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item  mb-md-3">
-              <div class="row">
-                <div class="col  m-md-3 m-sm-3">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
-                    <img class="card-img-top"
-                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
-                          href="./course.html">Applying JavaScript and using the console.</a></h5>
-                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
-                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
-                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
-                      </span>
-                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
-                          aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
-                      </p>
-
-                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
-                          class="fs-6 text-muted">$850</del></div>
-
-                      <div class="card-footer mt-2" style="background-color: white;">
-                        <div class="align-items-center row">
-                          <div class="col-auto col">
-                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
-                              alt="" class="rounded-circle" style="width:40px;height:40px">
-                          </div>
-                          <div class="col ms-2 col">
-                            <span>Brooklyn Simmons</span>
-                          </div>
-                          <div class="col-auto col">
-                            <i class="fa-regular fa-bookmark"></i>
-                          </div>
-                        </div>
-                        <span class="d-none">
-                          <div class="mt-3 progress" style="height: 5px;">
-                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
-                              aria-valuemax="100" style="width: 95%;">
-                            </div>
-                          </div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col  m-md-3 m-sm-3 d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
-                    <img class="card-img-top"
-                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
-                          href="./course.html">Applying JavaScript and using the console.</a></h5>
-                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
-                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
-                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
-                      </span>
-                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
-                          aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
-                      </p>
-
-                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
-                          class="fs-6 text-muted">$850</del></div>
-
-                      <div class="card-footer mt-2" style="background-color: white;">
-                        <div class="align-items-center row">
-                          <div class="col-auto col">
-                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
-                              alt="" class="rounded-circle" style="width:40px;height:40px">
-                          </div>
-                          <div class="col ms-2 col">
-                            <span>Brooklyn Simmons</span>
-                          </div>
-                          <div class="col-auto col">
-                            <i class="fa-regular fa-bookmark"></i>
-                          </div>
-                        </div>
-                        <span class="d-none">
-                          <div class="mt-3 progress" style="height: 5px;">
-                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
-                              aria-valuemax="100" style="width: 95%;">
-                            </div>
-                          </div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col  m-md-3 m-sm-3 d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -548,10 +425,59 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item m-md-3 m-sm-3">
+            <div class="carousel-item">
               <div class="row">
-                <div class="col  mb-md-3">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                <div class="col">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -600,8 +526,8 @@
                   </div>
                 </div>
 
-                <div class="col  mb-md-3 d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -649,8 +575,208 @@
                     </div>
                   </div>
                 </div>
-                <div class="col  mb-md-3 d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -718,7 +844,7 @@
   </section>
 
 
-  <section class="pt-lg-12 pt-10 pt pb-lg-3 pb-6 mt-5">
+  <section class="pt-lg-12 pt-10 pt pb-lg-3 pb-6 mt-5 bodySection">
     <div class="container">
       <div class="row mt-4">
         <div class="col">
@@ -731,57 +857,7 @@
             <div class="carousel-item active">
               <div class="row">
                 <div class="col">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
-                    <img class="card-img-top"
-                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
-                          href="./course.html">Applying JavaScript and using the console.</a></h5>
-                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
-                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
-                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
-                      </span>
-                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
-                          aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
-                      </p>
-
-                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
-                          class="fs-6 text-muted">$850</del></div>
-
-                      <div class="card-footer mt-2" style="background-color: white;">
-                        <div class="align-items-center row">
-                          <div class="col-auto col">
-                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
-                              alt="" class="rounded-circle" style="width:40px;height:40px">
-                          </div>
-                          <div class="col ms-2 col">
-                            <span>Brooklyn Simmons</span>
-                          </div>
-                          <div class="col-auto col">
-                            <i class="fa-regular fa-bookmark"></i>
-                          </div>
-                        </div>
-                        <span class="d-none">
-                          <div class="mt-3 progress" style="height: 5px;">
-                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
-                              aria-valuemax="100" style="width: 95%;">
-                            </div>
-                          </div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -830,7 +906,105 @@
                   </div>
                 </div>
                 <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -883,57 +1057,7 @@
             <div class="carousel-item">
               <div class="row">
                 <div class="col">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
-                    <img class="card-img-top"
-                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
-                          href="./course.html">Applying JavaScript and using the console.</a></h5>
-                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
-                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
-                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
-                      </span>
-                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
-                          aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
-                      </p>
-
-                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
-                          class="fs-6 text-muted">$850</del></div>
-
-                      <div class="card-footer mt-2" style="background-color: white;">
-                        <div class="align-items-center row">
-                          <div class="col-auto col">
-                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
-                              alt="" class="rounded-circle" style="width:40px;height:40px">
-                          </div>
-                          <div class="col ms-2 col">
-                            <span>Brooklyn Simmons</span>
-                          </div>
-                          <div class="col-auto col">
-                            <i class="fa-regular fa-bookmark"></i>
-                          </div>
-                        </div>
-                        <span class="d-none">
-                          <div class="mt-3 progress" style="height: 5px;">
-                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
-                              aria-valuemax="100" style="width: 95%;">
-                            </div>
-                          </div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -982,7 +1106,105 @@
                   </div>
                 </div>
                 <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1035,57 +1257,7 @@
             <div class="carousel-item">
               <div class="row">
                 <div class="col">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
-                    <img class="card-img-top"
-                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
-                          href="./course.html">Applying JavaScript and using the console.</a></h5>
-                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
-                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
-                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
-                      </span>
-                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
-                          aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
-                      </p>
-
-                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
-                          class="fs-6 text-muted">$850</del></div>
-
-                      <div class="card-footer mt-2" style="background-color: white;">
-                        <div class="align-items-center row">
-                          <div class="col-auto col">
-                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
-                              alt="" class="rounded-circle" style="width:40px;height:40px">
-                          </div>
-                          <div class="col ms-2 col">
-                            <span>Brooklyn Simmons</span>
-                          </div>
-                          <div class="col-auto col">
-                            <i class="fa-regular fa-bookmark"></i>
-                          </div>
-                        </div>
-                        <span class="d-none">
-                          <div class="mt-3 progress" style="height: 5px;">
-                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
-                              aria-valuemax="100" style="width: 95%;">
-                            </div>
-                          </div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1134,7 +1306,203 @@
                   </div>
                 </div>
                 <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1202,7 +1570,7 @@
   </section>
 
 
-  <section class="pt-lg-12 pt-10 pt pb-lg-3 pb-6 mt-5">
+  <section class="pt-lg-12 pt-10 pt pb-lg-3 pb-6 mt-5 bodySection">
     <div class="container">
       <div class="row mt-4">
         <div class="col">
@@ -1215,57 +1583,7 @@
             <div class="carousel-item active">
               <div class="row">
                 <div class="col">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
-                    <img class="card-img-top"
-                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
-                          href="./course.html">Applying JavaScript and using the console.</a></h5>
-                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
-                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
-                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
-                      </span>
-                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
-                          aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
-                      </p>
-
-                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
-                          class="fs-6 text-muted">$850</del></div>
-
-                      <div class="card-footer mt-2" style="background-color: white;">
-                        <div class="align-items-center row">
-                          <div class="col-auto col">
-                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
-                              alt="" class="rounded-circle" style="width:40px;height:40px">
-                          </div>
-                          <div class="col ms-2 col">
-                            <span>Brooklyn Simmons</span>
-                          </div>
-                          <div class="col-auto col">
-                            <i class="fa-regular fa-bookmark"></i>
-                          </div>
-                        </div>
-                        <span class="d-none">
-                          <div class="mt-3 progress" style="height: 5px;">
-                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
-                              aria-valuemax="100" style="width: 95%;">
-                            </div>
-                          </div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1314,7 +1632,105 @@
                   </div>
                 </div>
                 <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1367,57 +1783,7 @@
             <div class="carousel-item">
               <div class="row">
                 <div class="col">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
-                    <img class="card-img-top"
-                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
-                          href="./course.html">Applying JavaScript and using the console.</a></h5>
-                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
-                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
-                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
-                      </span>
-                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
-                          aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
-                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
-                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
-                      </p>
-
-                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
-                          class="fs-6 text-muted">$850</del></div>
-
-                      <div class="card-footer mt-2" style="background-color: white;">
-                        <div class="align-items-center row">
-                          <div class="col-auto col">
-                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
-                              alt="" class="rounded-circle" style="width:40px;height:40px">
-                          </div>
-                          <div class="col ms-2 col">
-                            <span>Brooklyn Simmons</span>
-                          </div>
-                          <div class="col-auto col">
-                            <i class="fa-regular fa-bookmark"></i>
-                          </div>
-                        </div>
-                        <span class="d-none">
-                          <div class="mt-3 progress" style="height: 5px;">
-                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
-                              aria-valuemax="100" style="width: 95%;">
-                            </div>
-                          </div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1466,7 +1832,105 @@
                   </div>
                 </div>
                 <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1519,7 +1983,7 @@
             <div class="carousel-item">
               <div class="row">
                 <div class="col">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1569,7 +2033,7 @@
                 </div>
 
                 <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1618,7 +2082,56 @@
                   </div>
                 </div>
                 <div class="col d-none d-md-block">
-                  <div class="card d-block mx-auto" style="width: 18rem;" alt="First slide">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
+                    <img class="card-img-top"
+                      src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a style="color:black; text-decoration: none;"
+                          href="./course.html">Applying JavaScript and using the console.</a></h5>
+                      <span style="color:grey; font-style: normal;"><i class="fa-regular fa-clock"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">2h 40min</span>
+                        <span style="padding-left: 10px"><i class="fas fa-signal" style="color:blue"></i><span
+                            style="padding-left: 10px;font-size: 10px;">Advance</span></span>
+                      </span>
+                      <p class="card-text"><i style="font-size: 10px;color:orange" class="fa fa-star"
+                          aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <i style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i><i
+                          style="font-size: 10px;color:orange" class="fa fa-star" aria-hidden="true"></i>
+                        <span style="padding-left: 10px;font-size: 10px;">5.0 (1,500)</span>
+                      </p>
+
+                      <div class="lh-1 mt-3 "><span class="text-dark fw-bold">$700</span> <del
+                          class="fs-6 text-muted">$850</del></div>
+
+                      <div class="card-footer mt-2" style="background-color: white;">
+                        <div class="align-items-center row">
+                          <div class="col-auto col">
+                            <img src="https://geeks-react.netlify.app/static/media/avatar-6.3905522d6589ed6dfcf0.jpg"
+                              alt="" class="rounded-circle" style="width:40px;height:40px">
+                          </div>
+                          <div class="col ms-2 col">
+                            <span>Brooklyn Simmons</span>
+                          </div>
+                          <div class="col-auto col">
+                            <i class="fa-regular fa-bookmark"></i>
+                          </div>
+                        </div>
+                        <span class="d-none">
+                          <div class="mt-3 progress" style="height: 5px;">
+                            <div role="progressbar" class="progress-bar bg-success" aria-valuenow="95" aria-valuemin="0"
+                              aria-valuemax="100" style="width: 95%;">
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-md-block">
+                  <div class="card d-block mx-auto course-card"  alt="First slide">
                     <img class="card-img-top"
                       src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
                       alt="Card image cap">
@@ -1703,7 +2216,6 @@
       </div>
     </div>
   </footer>
-</section>
 
 </body>
 

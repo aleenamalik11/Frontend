@@ -8,9 +8,14 @@
 
 }
 
-.card:hover {
+.course-card:hover {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 8px 8px;
   transform: translate3d(0px, -1px, 0px);
+}
+
+.course-card{
+  border-radius: 0.7rem !important;
+  width: 15rem !important;
 }
  
  #title {
@@ -22,8 +27,7 @@
 }
 
 .nav-link{
-  font-family: 'Feather' !important;
-  font-weight: 600 !important;
+  
   color: rgb(30, 41, 59) !important;
 }
 
@@ -105,12 +109,6 @@
     opacity: 1;
   }
 
-  /* .rounded-circle{
-    border-radius: 50% !important;
-    width: 50px;
-  } */
-
-
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     outline: black;
@@ -124,7 +122,6 @@
   }
   
   .carousel-control-prev-icon:after {
-    background-image: url('images/prev-arrow.PNG');
     font-size: 55px;
     color: black;
     width:20px;
@@ -183,7 +180,7 @@
 
 @media (max-width: 991.98px) {
   .carousel-control-next{
-    margin-top: 60px;
+    margin-top: 40px;
     margin-right: 0 !important;
     color:black !important;
     top: 380px !important;
@@ -193,7 +190,7 @@
 }
 @media (max-width: 991.98px) {
   .carousel-control-prev{
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 100px !important;
     color:black !important;
     top: 380px !important;
