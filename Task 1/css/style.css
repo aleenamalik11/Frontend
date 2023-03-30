@@ -162,14 +162,11 @@
 .carousel-control-prev {
     margin-left: -100px !important;
     color:black !important;
-    bottom: 0;
   }
   
   .carousel-control-next {
-    margin-right: -100px;
-    color:black !important;
-    bottom: 0;
- 
+    margin-right: -95px;
+    color:black !important; 
   }
   @media only screen and (max-width: 767px) {
     .carousel {
@@ -181,17 +178,15 @@
   color:inherit;
 }
 .carousel-control-next-icon {
-  /* background-image: url('images/next-arrow.PNG') !important; */
   background-image: none !important;
   color:black !important;
   width: 32px !important; height: 32px !important;
 
 }
 .carousel-control-prev-icon {
-  /* background-image: url('images/prev-arrow.PNG') !important; */
   background-image: none !important;
-
-  margin-left: 20px !important;
+  color:black !important;
+  width: 32px !important; height: 32px !important;
 }
 .accordion-button:not(.collapsed) {
   background-color: white !important;
