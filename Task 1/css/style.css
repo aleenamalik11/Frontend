@@ -12,6 +12,11 @@
   box-shadow: rgba(0, 0, 0, 0.22) 0px 8px 8px;
   transform: translate3d(0px, -1px, 0px);
 }
+.shadow-sec {
+  box-shadow: 0 1px 3px rgba(17,24,39,.09)!important;
+}
+
+
 
 .course-card{
   border-radius: 0.7rem !important;
@@ -116,17 +121,43 @@
   
   .carousel-control-next-icon:after
   {
-    font-size: 55px;
+
+    background-image: none !important;
+    content: '>' !important;
+    font-size: 25px !important;
+    color: black !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    background-size: cover !important;
     color: black;
-    width:20px;
+    width: 38px !important;
+    height: 38px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .carousel-control-prev-icon:after {
-    font-size: 55px;
+    font-size: 25px !important;
+    background-image: none !important;
+    content: '<' !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    background-size: cover !important;
     color: black;
-    width:20px;
+    width: 38px !important;
+    height: 38px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
   }
   
+.carousel-control-next-icon:hover:after,
+.carousel-control-prev-icon:hover:after {
+  background-color: #754ffe !important;
+  color: white !important;
+}
 
 .carousel-control-prev {
     margin-left: -100px !important;
@@ -150,10 +181,16 @@
   color:inherit;
 }
 .carousel-control-next-icon {
-  background-image: url('images/next-arrow.PNG') !important;
+  /* background-image: url('images/next-arrow.PNG') !important; */
+  background-image: none !important;
+  color:black !important;
+  width: 32px !important; height: 32px !important;
+
 }
 .carousel-control-prev-icon {
-  background-image: url('images/prev-arrow.PNG') !important;
+  /* background-image: url('images/prev-arrow.PNG') !important; */
+  background-image: none !important;
+
   margin-left: 20px !important;
 }
 .accordion-button:not(.collapsed) {
@@ -191,10 +228,10 @@
 @media (max-width: 991.98px) {
   .carousel-control-prev{
     margin-top: 40px;
-    margin-left: 100px !important;
+    margin-left: 150px !important;
     color:black !important;
     top: 380px !important;
-    right: 1000px !important;
+    right: 1800px !important;
     bottom: auto;
   }
 }
