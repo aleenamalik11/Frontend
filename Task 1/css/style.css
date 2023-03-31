@@ -1,7 +1,7 @@
 
 
 @font-face {
-    font-family: Feather;
+    font-family: 'Feather';
     font-style: normal;
     font-weight: 400;
    src: url('fonts/feather.ttf') format('truetype');
@@ -26,7 +26,7 @@
     color: #754ffe!important;
 }
 .bodySection{
-  background-color: lightgrey !important;
+  background-color: #e4e3e9 !important;
 }
 
 .nav-link{
@@ -67,12 +67,28 @@
   padding-bottom: 4.5rem!important;
   padding-top: 4.5rem!important;
 }
+.h4, h4 {
+  font-size: 1rem !important;
+}
 
 .border-white {
   border-color: #fff!important;
 }
-
-
+.btn-primary {
+  color: #fff !important;
+  background-color: #6343d8 !important;
+  border-color: #6343d8 !important;
+  font-weight: 600 !important;
+}
+.btn-outline-primary {
+  color: #6343d8 !important;
+  border-color: #6343d8 !important;
+  font-weight: 600 !important;
+}
+.btn-outline-primary:hover {
+  background-color: #6343d8 !important;
+  color: white !important;
+}
 .btn-play {
   background-color: #fff;
   color: #754ffe;
@@ -201,7 +217,7 @@
 }
 
 .mt-n50 {
-    margin-top: -50px!important;
+    margin-top: -60px!important;
 }
 
 .card{
@@ -242,6 +258,28 @@
     justify-content: center !important;
     border-radius: 0.7rem !important;
     width: 25rem !important;
+
+
+}
+.bg-div{
+  margin-top: 1px !important;
+  margin-bottom: 5px !important;
+}
+
+}
+
+@media (min-width: 561px) {/*  small*/
+  .course-card{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 0.7rem !important;
+    width: 25rem !important;
+
+
+}
+.bg-div{
+  margin-top: 1px !important;
 }
 }
 /* Open dropdown on hover */
@@ -293,6 +331,9 @@
 .carousel-control-prev{
   margin-top: 230px !important;
 }
+.bg-div{
+  margin-top: 20px !important;
+}
 }
 
 @media (min-width: 990px){/* large*/
@@ -306,6 +347,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.bg-div{
+  margin-top: 20px !important;
 }
 }
 

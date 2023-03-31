@@ -3,7 +3,7 @@ const phoneUtil = window.libphonenumber;
 $(document).ready(function() {
 
     $("#next-step-2").click(function(){
-        //if(validateBasicDetailsForm())
+        if(validateBasicDetailsForm())
         {
             $('#img-step-1').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1.png');
             $('#img-step-2').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2-active.png');
@@ -21,7 +21,7 @@ $(document).ready(function() {
     });
 
     $("#next-step-3").click(function(){
-        //if(validatePassChangeForm())
+        if(validatePassChangeForm())
         {
             $('#img-step-2').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2.png');
             $('#img-step-3').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3-active.png');
@@ -45,6 +45,66 @@ $(document).ready(function() {
         $("#cart-details").hide();
         $('#cart-totals').show();
     });
+
+
+    $('#img-step-1').click(function(){
+
+        $('#img-step-1').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1-active.png');
+        $('#img-step-3').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3.png');
+        $('#img-step-4').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4.png');
+        $('#img-step-2').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2.png');
+        $("#cart-details").hide();
+        $('#cart-totals').hide();
+        $(".form-pass-change").hide();
+        $(".form-basic-details").show();
+
+      });
+
+
+    $('#img-step-2').click(function(){
+        if(validateBasicDetailsForm())
+        {
+            $('#img-step-1').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1.png');
+            $('#img-step-3').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3.png');
+            $('#img-step-4').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4.png');
+            $('#img-step-2').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2-active.png');
+            $(".form-basic-details").hide();
+            $("#cart-details").hide();
+            $('#cart-totals').hide();
+            $(".form-pass-change").show();
+            setPasswordChangeForm();
+        }
+    });
+
+
+    $('#img-step-3').click(function(){
+        if(validatePassChangeForm())
+        {
+            $('#img-step-1').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1.png');
+            $('#img-step-3').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3-active.png');
+            $('#img-step-4').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4.png');
+            $('#img-step-2').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2.png');
+            $(".form-pass-change").hide();
+            $(".form-basic-details").hide();
+            $('#cart-totals').hide();
+            $("#cart-details").show();
+        }
+    });
+
+
+    $('#img-step-4').click(function(){
+        $('#img-step-1').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-1.png');
+        $('#img-step-3').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-3.png');
+        $('#img-step-4').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-4-active.png');
+        $('#img-step-2').attr('src', 'https://colorlib.com/etc/bwiz/colorlib-wizard-8/images/step-2.png');
+        calculateSubTotal();
+        calculateTotalAmount();
+        $(".form-pass-change").hide();
+        $(".form-basic-details").hide();
+        $("#cart-details").hide();
+        $('#cart-totals').show();
+    });
+    
 
     $(".plus").click(function() {
         var input = $(this).siblings(".quantity-input");
@@ -104,8 +164,13 @@ $(document).ready(function() {
     }
 
     function calculateTotalAmount(){
-        var totalAmount = parseFloat($(".sub-total-amount").text()) + parseFloat($(".service-amount").text());
+        var subTotal = parseFloat($(".sub-total-amount").text());
+        var totalAmount = 0.00;
+        if(parseFloat($(".sub-total-amount").text()) > 0){
+            totalAmount = subTotal + parseFloat($(".service-amount").text());
+        }
         $(".total-amount").text(totalAmount);
+
     }
 
     function incQuantity(currentValue, inputElement) {
@@ -119,7 +184,7 @@ $(document).ready(function() {
     function decQuantity(currentValue, inputElement) {
         var newValue = parseInt(currentValue) - 1;
         if (newValue < 1) {
-            newValue = 1;
+            newValue = 0;
         }
         inputElement.val(newValue);
     }
@@ -194,7 +259,7 @@ $(document).ready(function() {
 
     function showErrorMessage(input, message) {
         input.next('.error').remove();
-        input.after('<span class="error" style="color: red">' + message +'</span>');
+        input.after('<span class="error" style="color: red;float: left">' + message +'</span>');
         input.css('border-color', 'red');
     }
     function removeErrorMessage(input) {
