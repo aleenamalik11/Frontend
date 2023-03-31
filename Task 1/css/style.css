@@ -259,7 +259,9 @@ h4 {
 .mt-n50 {
   margin-top: -50px !important;
 }
-
+.fw-bold {
+  font-weight: 700 !important;
+}
 .card {
   border-color: white !important;
 }
@@ -295,27 +297,39 @@ a{
 
 @media (max-width: 561px) {
   /* extra small*/
-  .course-card {
+  .course-card, .card-custom, .card-custom .card-body .list-group-item, .card-header, .img-course{
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     border-radius: 0.7rem !important;
     width: 25rem !important;
+  }
+  .exp-btn{
+    width: 22rem !important;
   }
   .bg-div {
     margin-top: 1px !important;
     margin-bottom: 5px !important;
   }
+  .card-accordian{
+    width: 15rem !important;
+  }
 }
 
-@media (min-width: 561px) {
+@media (min-width: 561px) and (max-width: 700px){
   /*  small*/
-  .course-card {
+  .course-card, .card-custom, .card-custom .card-body .list-group-item, .card-header, .img-course{
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     border-radius: 0.7rem !important;
     width: 25rem !important;
+  }
+  .exp-btn{
+    width: 22rem !important;
+  }
+  .card-accordian{
+    width: 15rem !important;
   }
   .bg-div {
     margin-top: 1px !important;
@@ -353,9 +367,7 @@ a{
   font-weight: 600 !important;
 }
 .display-4 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  letter-spacing: -0.05rem;
+  font-size: 2.5rem !important;
 }
 h1 {
   font-size: 2rem;
@@ -366,7 +378,10 @@ h1 {
 .display-3,
 .display-4 {
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.2 !important;
+}
+.display-1, .display-2, .display-3, .display-4 {
+  letter-spacing: -.05rem !important;
 }
 .card{
   border-radius:0.5rem!important;
