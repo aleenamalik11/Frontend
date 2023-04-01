@@ -15,7 +15,6 @@
   font-family: Inter, sans serif !important;
   font-weight: 500 !important;
   font-size: 14px !important;
-  line-height: 22.4px !important;
   color:  #1e293b !important;
 }
 .bg-prim {
@@ -315,6 +314,21 @@ a{
     width: 15rem !important;
   }
 }
+/*chevron*/
+nav ul li > .nav-link::after {
+  content: '\203A' !important;
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 1.2em;
+  border-style: none;
+  transform: rotate(90deg) scaleX(1.5) translateX(3px);/* Reset the arrow rotation */
+}
+
+nav ul li > .no-arrow::after { /* Add class selector ".no-arrow" to target only the link that should not have the arrow */
+  content: none !important; /* Set "content" property to "none" to remove the arrow */
+}
+
+
 
 @media (min-width: 561px) and (max-width: 700px){
   /*  small*/
@@ -336,13 +350,6 @@ a{
   }
 }
 /* Open dropdown on hover */
-.nav-item.dropdown:hover .dropdown-toggle:not(.disabled):after {
-  content: "" !important;
-  transform: translateY(0);
-  border-top: none;
-  border-bottom: 0.3em solid;
-}
-
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
